@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <DetailViewControllerDelegate>
 
 @end
 
@@ -16,12 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)pulsado:(id)sender {
+    
+    // Para acceder por código
+   //  [self performSegueWithIdentifier:@"nombreSegue" sender:self];
+    DetailViewController *detall = [self.storyboard instantiateViewControllerWithIdentifier:@"detailVCid"];
+    detall.delegate = self;
+    
+    [self presentViewController:detall animated:YES completion:nil];
+    
+}
+
+// En el caso de definir
+// un Segue en StoryBoard
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    DetailViewController *detall = segue.destinationViewController;
+    detall.delegate = self;
+}
+
+- (void)userCerrarDetalle:(DetailViewController *)detailVC {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

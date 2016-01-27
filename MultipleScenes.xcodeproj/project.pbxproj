@@ -15,6 +15,7 @@
 		410C538A1C5756AA0025FFD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410C53881C5756AA0025FFD0 /* LaunchScreen.storyboard */; };
 		410C53951C5756AB0025FFD0 /* MultipleScenesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410C53941C5756AB0025FFD0 /* MultipleScenesTests.m */; };
 		410C53A01C5756AB0025FFD0 /* MultipleScenesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410C539F1C5756AB0025FFD0 /* MultipleScenesUITests.m */; };
+		410C53AF1C5762F40025FFD0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410C53AE1C5762F40025FFD0 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		410C539B1C5756AB0025FFD0 /* MultipleScenesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleScenesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		410C539F1C5756AB0025FFD0 /* MultipleScenesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleScenesUITests.m; sourceTree = "<group>"; };
 		410C53A11C5756AB0025FFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410C53AD1C5762F40025FFD0 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		410C53AE1C5762F40025FFD0 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +108,8 @@
 				410C537E1C5756AA0025FFD0 /* AppDelegate.m */,
 				410C53801C5756AA0025FFD0 /* ViewController.h */,
 				410C53811C5756AA0025FFD0 /* ViewController.m */,
-				410C53831C5756AA0025FFD0 /* Main.storyboard */,
-				410C53861C5756AA0025FFD0 /* Assets.xcassets */,
-				410C53881C5756AA0025FFD0 /* LaunchScreen.storyboard */,
-				410C538B1C5756AA0025FFD0 /* Info.plist */,
+				410C53AD1C5762F40025FFD0 /* DetailViewController.h */,
+				410C53AE1C5762F40025FFD0 /* DetailViewController.m */,
 				410C537A1C5756AA0025FFD0 /* Supporting Files */,
 			);
 			path = MultipleScenes;
@@ -117,7 +118,11 @@
 		410C537A1C5756AA0025FFD0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				410C53831C5756AA0025FFD0 /* Main.storyboard */,
+				410C53881C5756AA0025FFD0 /* LaunchScreen.storyboard */,
+				410C538B1C5756AA0025FFD0 /* Info.plist */,
 				410C537B1C5756AA0025FFD0 /* main.m */,
+				410C53861C5756AA0025FFD0 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				410C53821C5756AA0025FFD0 /* ViewController.m in Sources */,
 				410C537F1C5756AA0025FFD0 /* AppDelegate.m in Sources */,
 				410C537C1C5756AA0025FFD0 /* main.m in Sources */,
+				410C53AF1C5762F40025FFD0 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultipleScenes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.efc.MultipleScenes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultipleScenes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.efc.MultipleScenes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +504,7 @@
 				410C53A61C5756AB0025FFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		410C53A71C5756AB0025FFD0 /* Build configuration list for PBXNativeTarget "MultipleScenesTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +513,7 @@
 				410C53A91C5756AB0025FFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		410C53AA1C5756AB0025FFD0 /* Build configuration list for PBXNativeTarget "MultipleScenesUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +522,7 @@
 				410C53AC1C5756AB0025FFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
